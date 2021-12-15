@@ -6,9 +6,9 @@ export type Json =
   | { [property: string]: Json }
   | Array<Json>
 
-export type JSONObject = { [property: string]: Json }
+export type JsonObject = { [property: string]: Json }
 
-export interface PanelProps<Config extends JSONObject = JSONObject> {
+export interface PanelProps<Config extends JsonObject = JsonObject> {
   x: number
   y: number
   editMode: boolean
@@ -17,7 +17,7 @@ export interface PanelProps<Config extends JSONObject = JSONObject> {
   config: Config
 }
 
-export interface ConfigProps<Config extends JSONObject = JSONObject> {
+export interface ConfigProps<Config extends JsonObject = JsonObject> {
   config: Config
   close: () => void
   update: {
@@ -26,4 +26,4 @@ export interface ConfigProps<Config extends JSONObject = JSONObject> {
   }
 }
 
-export const placeholder = 'just a placeholder'
+export * from './PanelError'
