@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/panels-land/utils/compare/v1.1.0...v1.2.0) (2021-12-15)
+
+
+### Features
+
+* improve Panel Error ([f2a3f84](https://github.com/panels-land/utils/commit/f2a3f840e00fe0bb167aefc736960f35023e26b3))
+
 # [1.1.0](https://github.com/panels-land/utils/compare/v1.0.0...v1.1.0) (2021-12-15)
 
 
