@@ -1,17 +1,19 @@
 import type { JSX } from 'solid-js'
 
-interface PanelErrorAction {
+export interface PanelErrorAction {
   label: string
-  onClick: () => void
+  onClick: (() => void) | 'delete' | 'configure'
 }
 
 interface PanelErrorOptions {
   actions?: Array<PanelErrorAction>
-  node?: JSX.Element
 }
 
 export class PanelError extends Error {
-  constructor(message: string, public options: PanelErrorOptions = {}) {
-    super(message)
+  constructor(
+    public node: JSX.Element,
+    public options: PanelErrorOptions = {}
+  ) {
+    super(typeof node === 'string' ? node : 'Panel Error')
   }
 }
