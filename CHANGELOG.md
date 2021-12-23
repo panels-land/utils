@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/panels-land/utils/compare/v1.2.0...v1.3.0) (2021-12-23)
+
+
+### Features
+
+* improved types ([b466f83](https://github.com/panels-land/utils/commit/b466f8344622f8db542bf6bb1450f8d06a3328ca))
+
 # [1.2.0](https://github.com/panels-land/utils/compare/v1.1.0...v1.2.0) (2021-12-15)
 
 
